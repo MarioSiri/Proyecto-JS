@@ -4,9 +4,41 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css">
 		<title>Document</title>
 	</head>
-	<body>
+	<body class="modo-claro">
+		<header>
+			<h1>BIENVENIDOS A LA AUTOMOTORA FICTICIA</h1>
+			<button id="claro-oscuro">Modo Oscuro</button>
+			<button id="botonCerrar">Cerrar Sesión</button>
+		</header>
+
+		<div class="conteinerFormulario">
+			<p id="tituloLogin">
+				INGRESE SUS DATOS
+			</p>
+			<form id="login">
+				<label>
+					<input type="text" placeholder="Usuario" id="inputUser">
+				</label>
+				<label>
+					<input type="text" placeholder="Contraseña" id="inputPasword">
+				</label>
+				<label>
+					<input type="submit" value="INGRESAR">
+				</label>
+				<p id="loginIncorrecto">
+					Sus datos son incorrectos, vuelva a ingresarlos!!
+				</p>
+			</form>
+		</div>
+
+		<div class="conteiner"></div>
+		<footer>
+			<h2>REDES SOCIALES DE LA AUTOMOTORA</h2>
+		</footer>
+
 		<script src="autos.js"></script>
 		<script src="index.js"></script>
 	</body>

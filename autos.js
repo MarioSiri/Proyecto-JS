@@ -178,7 +178,7 @@ const autos = [
 		categoria: 'Camioneta',
 		combustible: 'Nafta',
 		descripcion: 'Renault Duster Camioneta',
-		img: './img/duster.jpeg',
+		img: './img/duster.jpg',
 		oferta: false,
 	},
 	{
