@@ -4,42 +4,114 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
 		<title>Document</title>
 	</head>
 	<body class="modo-claro">
 		<header>
-			<h1>BIENVENIDOS A LA AUTOMOTORA FICTICIA</h1>
-			<button id="claro-oscuro">Modo Oscuro</button>
-			<button id="botonCerrar">Cerrar Sesión</button>
+			<div class="botones">
+				<h1>AUTOMOTORA FICTICIA</h1>
+				<button id="claro-oscuro">Modo Oscuro</button>
+				<button id="botonCerrar">Cerrar Sesión</button>
+			</div>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<a href="productos.html">AUTOS</a>
+					</li>
+					<li>
+						<a href="contacto.html">CONTACTO</a>
+					</li>
+					<li>
+						<a href="carrito.htm">CARRITO</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<div class="conteinerFormulario">
-			<p id="tituloLogin">
-				INGRESE SUS DATOS
-			</p>
+			<p id="tituloLogin">INGRESE SUS DATOS</p>
 			<form id="login">
 				<label>
-					<input type="text" placeholder="Usuario" id="inputUser">
+					<input type="text" placeholder="Usuario" id="inputUser" />
 				</label>
 				<label>
-					<input type="text" placeholder="Contraseña" id="inputPasword">
+					<input type="text" placeholder="Contraseña" id="inputPasword" />
 				</label>
 				<label>
-					<input type="submit" value="INGRESAR">
+					<input type="submit" value="INGRESAR" />
 				</label>
 				<p id="loginIncorrecto">
 					Sus datos son incorrectos, vuelva a ingresarlos!!
 				</p>
+				<p id="avisologin">
+					PARA NAVEGAR POR LAS DEMAS SECCIONES DEBE LOGEARSE
+				</p>
 			</form>
 		</div>
 
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="./img/carrousel1.jpeg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/carrousel2.jpeg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/carrousel3.jpeg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/carrousel4.jpeg" alt="" />
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/carrousel5.jpeg" alt="" />
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<h2 class="tituloAutos">AUTOS EN OFERTA</h2>
 		<div class="conteiner"></div>
 		<footer>
-			<h2>REDES SOCIALES DE LA AUTOMOTORA</h2>
+			<h3>REDES SOCIALES DE LA AUTOMOTORA</h3>
+
+			<div class="piePagina">
+				<img
+					class="rounded"
+					src="./img/icons8-facebook.svg"
+					alt="Imagen logo Facebook"
+				/>
+				<img
+					class="rounded"
+					src="./img/icons8-instagram.svg"
+					alt="Imagen logo Instagram"
+				/>
+				<img
+					class="rounded"
+					src="./img/icons8-twitter.svg"
+					alt="Imagen logo Twitter"
+				/>
+			</div>
+			<div>
+				<p class="infoFooter">TELEFONO: 342349258</p>
+				<p class="infoFooter">CORREO: automotorafalsa@gmail.com</p>
+			</div>
 		</footer>
 
-		<script src="autos.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<script src="index.js"></script>
+		<script src="login.js"></script>
+		<script src="modo.js"></script>
 	</body>
 </html>
